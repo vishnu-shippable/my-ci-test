@@ -7,13 +7,26 @@
 public class Car implements Vehicle
 {
   private Integer position;
+  protected Integer wheelsCount;
 
-<span class="nc" id="L11">  public Car() {</span>
-<span class="nc" id="L12">    this.position = 0;</span>
-<span class="nc" id="L13">  }</span>
+<span class="nc" id="L12">  public Car() {</span>
+<span class="nc" id="L13">    this.position = 0;</span>
+<span class="nc" id="L14">    this.wheelsCount = 0;</span>
+<span class="nc" id="L15">  }</span>
 
   public void moveForward(Integer kilometer) {
-<span class="nc" id="L16">    this.position += kilometer;</span>
-<span class="nc" id="L17">  }</span>
+<span class="nc" id="L18">    this.position += kilometer;</span>
+<span class="nc" id="L19">  }</span>
+
+<span class="nc" id="L21">  private class Seat {</span>
+    Integer capacity;
+  }
+}
+
+class Bmw extends Car {
+  public Bmw() {
+<span class="nc" id="L28">    super();</span>
+<span class="nc" id="L29">    super.wheelsCount = 4;</span>
+<span class="nc" id="L30">  }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>
