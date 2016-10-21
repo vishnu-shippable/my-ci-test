@@ -2,9 +2,9 @@ language: java
 
 jdk:
   - oraclejdk8
-  - openjdk7
 
 build:
+  advancedReporting: true
   ci:
     # Create folders for test and code coverage
     - mkdir -p shippable/testresults
