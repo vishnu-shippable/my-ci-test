@@ -4,7 +4,7 @@ jdk:
   - oraclejdk8
 
 build:
-  advancedReporting: true
+  advancedReporting: false
   ci:
     # Create folders for test and code coverage
     - mkdir -p shippable/testresults
