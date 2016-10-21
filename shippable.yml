@@ -5,7 +5,7 @@ jdk:
 
 build:
   advancedReporting: true
-  pre_ci:
+  ci:
     # Create folders for test and code coverage
     - mkdir -p shippable/testresults
     - mkdir -p shippable/codecoverage
