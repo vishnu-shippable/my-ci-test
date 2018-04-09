@@ -1,6 +1,11 @@
-language: node_js
-  
+# Language setting
+language: none
+
 build:
+  pre_ci_boot:
+    image_name: vishnushippable/clearlinux-git-ignore-ssl
+    image_tag: 3-28-pm
+    pull: false
+
   ci:
-    - echo "Hello world"
-    - node --version
+    - openssl version
