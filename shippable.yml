@@ -9,3 +9,4 @@ build:
 
   ci:
     - openssl version
+    - wget -h
