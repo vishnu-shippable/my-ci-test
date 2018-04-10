@@ -1,6 +1,5 @@
-language: node_js
+language: python
   
 build:
   ci:
     - echo "Hello world"
-    - node --version
