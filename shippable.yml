@@ -1,6 +1,11 @@
-language: java
+language: none
   
 build:
   ci:
     - echo "Hello world"
-    - shipctl jdk set oraclejdk7
+    - export JAVA_HOME="/usr/lib/jvm/java-7-oracle"
+    - export PATH="$PATH:/usr/lib/jvm/java-7-oracle/bin"
+    - sudo update-alternatives --set java /usr/lib/jvm/java-7-oracle/jre/bin/java
+    - sudo update-alternatives --set javac /usr/lib/jvm/java-7-oracle/bin/javac 
+    - java -version
+    #- shipctl jdk set oraclejdk7
