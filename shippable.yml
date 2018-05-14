@@ -1,6 +1,6 @@
-language: node_js
+language: java
   
 build:
   ci:
     - echo "Hello world"
-    - node --version
+    - shipctl jdk set oraclejdk7
