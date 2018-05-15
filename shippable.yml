@@ -3,7 +3,7 @@ language: none
 build:
   pre_ci_boot:
     image_name: drydock/u14javall
-    image_tag: v5.5.1
+    image_tag: v5.6.1
   ci:
     - echo "Hello world"
     #- export JAVA_HOME="/usr/lib/jvm/java-7-oracle"
