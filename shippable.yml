@@ -2,7 +2,7 @@ language: none
   
 build:
   pre_ci_boot:
-    image_name: drydock/u16javall
+    image_name: drydock/c7javall
     image_tag: master
   ci:
     - shipctl jdk set openjdk7
