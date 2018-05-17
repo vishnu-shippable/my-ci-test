@@ -1,15 +1,8 @@
-language: none
-  
+language: java
+
+jdk:
+ - oraclejdk7
+
 build:
-  pre_ci_boot:
-    image_name: drydock/u14javall
-    image_tag: v5.6.1
   ci:
-    - echo "Hello world"
-    #- export JAVA_HOME="/usr/lib/jvm/java-7-oracle"
-    #- export PATH="$PATH:/usr/lib/jvm/java-7-oracle/bin"
-    #- sudo update-alternatives --set java /usr/lib/jvm/java-7-oracle/jre/bin/java
-    #- sudo update-alternatives --set javac /usr/lib/jvm/java-7-oracle/bin/javac 
-    #- java -version
-    - shipctl jdk set oraclejdk7
     - java -version
