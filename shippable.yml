@@ -5,7 +5,7 @@ build:
     image_name: drydock/c7javall
     image_tag: master
   ci:
-    - shipctl jdk set openjdk7
-    - java -version
     - shipctl jdk set openjdk8
+    - java -version
+    - shipctl jdk set openjdk9
     - java -version
