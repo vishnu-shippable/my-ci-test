@@ -14,4 +14,5 @@ build:
     image_name: drydock/c7javall
     image_tag: $IMAGE_TAG
   ci:
+    - shipctl jdk set oraclejdk7
     - java -version
