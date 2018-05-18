@@ -1,8 +1,17 @@
-language: java
+language: none
 
-jdk:
- - oraclejdk7
+env:
+  - IMAGE_TAG=v6.2.4
+  - IMAGE_TAG=v6.3.2
+  - IMAGE_TAG=v6.3.3
+  - IMAGE_TAG=v6.3.4
+  - IMAGE_TAG=v6.4.2
+  - IMAGE_TAG=v6.4.4
+  - IMAGE_TAG=v6.5.1
 
 build:
+  pre_ci_boot:
+    image_name: drydock/c7javall
+    image_tag: $IMAGE_TAG
   ci:
     - java -version
