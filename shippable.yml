@@ -4,3 +4,6 @@ build:
   ci:
     - echo "Hello world"
     - node --version
+    - shipctl get_integration_resource_field sample_kv_int key1
+    - shipctl get_integration_resource_field sample_aws_int accessKey
+    - shipctl get_integration_resource_field invalid_resource_name accessKey
