@@ -4,3 +4,9 @@ build:
   ci:
     - echo "Hello world"
     - node --version
+
+
+integrations:                 
+  hub:
+    - integrationName: special_docker
+      type: dockerRegistryLogin
