@@ -13,3 +13,4 @@ build:
     - cp -r target shippable/codecoverage
     - javac Hello.java
     - ls 
+    - java Hello
