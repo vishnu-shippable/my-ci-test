@@ -15,3 +15,5 @@ build:
     - ls 
     - java Hello
     - cat /etc/drydock/.env 
+    - javac -version
+    - java -version
