@@ -6,15 +6,14 @@ jdk:
 build:
   advancedReporting: true
   ci:
-    - echo "hello world"
     # Create folders for test and code coverage
-#     - mkdir -p shippable/testresults
-#     - mkdir -p shippable/codecoverage
-#     - mvn install
-#     - cp -r target shippable/codecoverage
-#     - javac Hello.java
-#     - ls 
-#     - java Hello
-#     - cat /etc/drydock/.env 
-#     - javac -version
-#     - java -version
+    - mkdir -p shippable/testresults
+    - mkdir -p shippable/codecoverage
+    - mvn install
+    - cp -r target shippable/codecoverage
+    - javac Hello.java
+    - ls 
+    - java Hello
+    - cat /etc/drydock/.env 
+    - javac -version
+    - java -version
