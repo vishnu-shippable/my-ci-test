@@ -2,13 +2,19 @@ language: java
 
 jdk:
   - openjdk7
+  - openjdk8
+  - openjdk9
+  - openjdk10
+  - openjdk11
   - oraclejdk8
+  - oraclejdk9
+  - oraclejdk10
+  - oraclejdk11
+  
   
 
 build:
-  advancedReporting: true
   ci:
-    # Create folders for test and code coverage
     - echo "$JAVA_HOME"
     - mkdir -p shippable/testresults
     - mkdir -p shippable/codecoverage
