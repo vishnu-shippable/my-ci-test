@@ -2,14 +2,14 @@ language: java
 
 jdk:
   - openjdk7
-  - openjdk8
-  - openjdk9
-  - openjdk10
-  - openjdk11
-  - oraclejdk8
-  - oraclejdk9
-  - oraclejdk10
-  - oraclejdk11
+#   - openjdk8
+#   - openjdk9
+#   - openjdk10
+#   - openjdk11
+#   - oraclejdk8
+#   - oraclejdk9
+#   - oraclejdk10
+#   - oraclejdk11
   
   
 
@@ -17,6 +17,7 @@ build:
   ci:
     - update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.191-2.6.15.4.el7_5.x86_64/bin/java 1
     - update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.191-2.6.15.4.el7_5.x86_64/bin/javac 1
+    - source shipctl jdk set openjdk7
     - echo "$JAVA_HOME"
     - javac Hello.java
     - ls 
