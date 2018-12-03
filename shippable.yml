@@ -9,4 +9,4 @@ build:
     - javac -version
     - echo "$JAVA_HOME"
     - printenv
-    - gradle --scan
+    - gradle build --scan
