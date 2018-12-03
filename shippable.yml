@@ -7,3 +7,5 @@ build:
   ci:
     - java -version
     - javac -version
+    - echo "$JAVA_HOME"
+    - printenv
