@@ -1,8 +1,1 @@
-plugins {
-    id 'com.gradle.build-scan' version '1.16'
-}
-
-buildScan {
-    licenseAgreementUrl = 'https://gradle.com/terms-of-service'
-    licenseAgree = 'yes'
-}
+apply plugin: 'com.gradle.build-scan'
