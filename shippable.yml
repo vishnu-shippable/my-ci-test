@@ -9,4 +9,6 @@ build:
     - javac -version
     - echo "$JAVA_HOME"
     - printenv
-    - gradle build --scan --debug
+    - git clone git@github.com:gradle/gradle-build-scan-quickstart.git
+    - cd gradle-build-scan-quickstart
+    - ./gradlew build --scan
