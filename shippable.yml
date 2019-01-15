@@ -5,13 +5,5 @@ jdk:
 
 build:
   ci:
-    - echo "$JAVA_HOME"
-    - javac Hello.java
-    - ls 
-    - java Hello
-    - javac -version
-    - java -version
-    - mkdir -p shippable/testresults
-    - mkdir -p shippable/codecoverage
-    - cp -r target shippable/codecoverage
-
+    - cd my-app
+    - mvn package
