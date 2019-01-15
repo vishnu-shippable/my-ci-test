@@ -31,8 +31,9 @@
 		<scope>test</scope>
 	</dependency>
 	<dependency>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-web</artifactId>
+		<groupId>com.squareup.okhttp3</groupId>
+		<artifactId>okhttp</artifactId>
+		<version>3.12.1</version>
 	</dependency>
   </dependencies>
 
