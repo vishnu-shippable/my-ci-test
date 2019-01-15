@@ -6,5 +6,4 @@ jdk:
 build:
   ci:
     - cd my-app
-    - mvn clean
     - mvn install
