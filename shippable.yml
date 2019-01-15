@@ -6,5 +6,6 @@ jdk:
 build:
   ci:
     - ls /etc/ssl/certs/java
+    - cat /etc/ssl/certs/java/cacerts
     - cd my-app
     - mvn install
