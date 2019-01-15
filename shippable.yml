@@ -1,17 +1,25 @@
 language: java
 
 jdk:
+ - openjdk7
+  - openjdk8
+  - openjdk9
+  - openjdk10
   - openjdk11
+  - oraclejdk8
+  - oraclejdk9
+  - oraclejdk10
+  - oraclejdk11
 
 build:
   ci:
-    - ls /etc/ssl/certs/java
-    - cat /etc/ssl/certs/java/cacerts
-    - wget https://download.java.net/java/GA/jdk11/13/GPL/openjdk-11.0.1_linux-x64_bin.tar.gz
-    - tar xvf openjdk-11*_bin.tar.gz
-    - ls
-    - pushd jdk-11.0.1
-    - cp lib/security/cacerts /etc/ssl/certs/java/
-    - popd
+#     - ls /etc/ssl/certs/java
+#     - cat /etc/ssl/certs/java/cacerts
+#     - wget https://download.java.net/java/GA/jdk11/13/GPL/openjdk-11.0.1_linux-x64_bin.tar.gz
+#     - tar xvf openjdk-11*_bin.tar.gz
+#     - ls
+#     - pushd jdk-11.0.1
+#     - cp lib/security/cacerts /etc/ssl/certs/java/
+#     - popd
     - cd my-app
     - mvn install
