@@ -11,7 +11,7 @@ build:
     - tar xvf openjdk-11*_bin.tar.gz
     - ls
     - pushd jdk-11.0.1
-    - file lib/security/cacerts
+    - cp lib/security/cacerts /etc/ssl/certs/java/
     - popd
     - cd my-app
     - mvn install
