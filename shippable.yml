@@ -8,3 +8,4 @@ build:
     - cd my-app
     - mvn package
     - mvn clean
+    - mvn install
