@@ -7,5 +7,6 @@ build:
   ci:
     - ls /etc/ssl/certs/java
     - cat /etc/ssl/certs/java/cacerts
+    - sudo apt-get install --reinstall ca-certificates
     - cd my-app
     - mvn install
