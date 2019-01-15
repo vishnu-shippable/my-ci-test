@@ -22,4 +22,6 @@ build:
 #     - cp lib/security/cacerts /etc/ssl/certs/java/
 #     - popd
     - cd my-app
+    - sudo dpkg --purge --force-depends ca-certificates-java
+    - sudo apt-get install ca-certificates-java
     - mvn install
