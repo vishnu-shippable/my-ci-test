@@ -1,15 +1,15 @@
 language: java
 
 jdk:
- - openjdk7
- - openjdk8
- - openjdk9
- - openjdk10
+#  - openjdk7
+#  - openjdk8
+#  - openjdk9
+#  - openjdk10
  - openjdk11
- - oraclejdk8
- - oraclejdk9
- - oraclejdk10
- - oraclejdk11
+#  - oraclejdk8
+#  - oraclejdk9
+#  - oraclejdk10
+#  - oraclejdk11
 
 build:
   ci:
@@ -22,6 +22,6 @@ build:
 #     - cp lib/security/cacerts /etc/ssl/certs/java/
 #     - popd
     - cd my-app
-    - sudo dpkg --purge --force-depends ca-certificates-java
-    - sudo apt-get install ca-certificates-java
+#     - sudo dpkg --purge --force-depends ca-certificates-java
+#     - sudo apt-get install ca-certificates-java
     - mvn install
